@@ -4,7 +4,7 @@
   "description": "get a random number for fyj",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,9 @@
   "homepage": "https://github.com/fancn21th/0_189_OpenSource_Spike#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.3.4",
+    "mocha": "9.1.3"
   }
 }
