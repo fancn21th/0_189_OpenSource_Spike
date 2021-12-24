@@ -1,0 +1,28 @@
+{
+  "name": "fyj-random-number",
+  "version": "1.0.0",
+  "description": "get a random number for fyj",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fancn21th/0_189_OpenSource_Spike.git"
+  },
+  "keywords": [
+    "random",
+    "number",
+    "for",
+    "fyj"
+  ],
+  "author": "alex fan <fancn21th@aliyun.com> (http://fancn21th.cn/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fancn21th/0_189_OpenSource_Spike/issues"
+  },
+  "homepage": "https://github.com/fancn21th/0_189_OpenSource_Spike#readme",
+  "dependencies": {
+    "unique-random-array": "3.0.0"
+  }
+}
