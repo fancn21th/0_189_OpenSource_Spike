@@ -1,6 +1,6 @@
 {
   "name": "fyj-random-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get a random number for fyj",
   "main": "src/index.js",
   "scripts": {
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/fancn21th/0_189_OpenSource_Spike#readme",
   "dependencies": {
-    "unique-random-array": "3.0.0"
+    "unique-random-array": "1.0.0"
   }
 }
