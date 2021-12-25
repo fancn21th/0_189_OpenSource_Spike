@@ -1,14 +1,15 @@
 {
   "name": "fyj-random-number",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "get a random number for fyj",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fancn21th/0_189_OpenSource_Spike.git"
+    "url": "https://github.com/fancn21th/0_189_OpenSource_Spike.git"
   },
   "keywords": [
     "random",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "chai": "4.3.4",
-    "mocha": "9.1.3"
+    "mocha": "9.1.3",
+    "semantic-release": "^18.0.1"
   }
 }
