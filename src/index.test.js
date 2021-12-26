@@ -19,5 +19,13 @@ describe("fyjRandomNumber", function () {
       var randomNumber = fyjRandomNumber.random();
       expect(fyjRandomNumber.all).to.include(randomNumber);
     });
+
+    it("should return an array of random items by specific number", function () {
+      var randomItems = fyjRandomNumber.random(3);
+      expect(randomItems).to.have.length(3);
+      randomItems.forEach(function (item) {
+        expect(fyjRandomNumber.all).to.include(item);
+      });
+    });
   });
 });
