@@ -38,4 +38,8 @@
 - install commonly
   - `npm install xxxx`
 - install beta
+
   - `npm install xxxx@beta`
+
+- pack and check
+  - `npm pack`

@@ -1,7 +1,7 @@
 // comment
-var uniqueRandomArray = require("unique-random-array");
-var numbers = require("./numbers");
-var getRandomItem = uniqueRandomArray(numbers);
+import uniqueRandomArray from "unique-random-array";
+import numbers from "./numbers";
+const getRandomItem = uniqueRandomArray(numbers);
 
 module.exports = {
   all: numbers,

@@ -1,5 +1,5 @@
-var expect = require("chai").expect;
-var fyjRandomNumber = require("./index.js");
+import { expect } from "chai";
+import fyjRandomNumber from "./index";
 
 describe("fyjRandomNumber", function () {
   describe("all", function () {

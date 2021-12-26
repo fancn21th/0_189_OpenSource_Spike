@@ -2,19 +2,26 @@
   "name": "fyj-random-number",
   "version": "0.0.0-development",
   "description": "get a random number for fyj",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
-    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "test": "mocha src/index.test.js -w",
-    "test:once": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "test": "mocha src/index.test.js --require babel-core/register",
+    "watch:test": "npm t -- -w",
+    "cover": "nyc npm t",
+    "prebuild": "rimraf dist",
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/fancn21th/0_189_OpenSource_Spike"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "keywords": [
     "random",
     "number",
@@ -31,6 +38,10 @@
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
     "chai": "4.3.4",
     "codecov.io": "0.1.6",
     "commitizen": "4.2.4",
@@ -38,14 +49,22 @@
     "ghooks": "2.0.4",
     "istanbul": "0.4.5",
     "mocha": "9.1.3",
+    "nyc": "15.1.0",
+    "rimraf": "3.0.2",
     "semantic-release": "^18.0.1"
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run test:once && npm run check-coverage"
+      "pre-commit": "npm run cover && npm run check-coverage"
     },
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
   }
 }
