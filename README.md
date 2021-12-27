@@ -1,7 +1,7 @@
 # How to publish
 
 [![travis build](https://img.shields.io/travis/fancn21th/0_189_OpenSource_Spike.svg?style=flat-square)](https://app.travis-ci.com/github/fancn21th/0_189_OpenSource_Spike/builds)
-![]()
+[![github downloads](https://img.shields.io/github/downloads/fancn21th/0_189_OpenSource_Spike/total?logo=Github)](https://github.com/fancn21th/0_189_OpenSource_Spike)
 ![]()
 ![]()
 
